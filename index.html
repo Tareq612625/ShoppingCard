@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+      .success, .error{
+          color: white;
+          padding: 5px;
+          margin:5px 0 15px 0;
+      }
+      .success{
+          background: green;
+      }
+      .error{
+          background: red;
+      }
+    </style>
+    <title>Shopping Card </title>
+</head>
+<body>
+        <div class="container">
+          <h1>Item Display </h1><hr>
+            <table class="table table-dark" id="product_list">
+                <thead>
+                  <tr>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Product Price</th>
+                    <th scope="col">Product Code</th>
+                    <th scope="col">Add to Card</th>
+                  </tr>
+                </thead>
+                <tbody id="Products_list">
+                  <tr>
+                    <td id="itemName">Laptop</td>
+                    <td id="itemPrice">100000</td>
+                    <td id="itemCode">L001</td>
+                    <td>
+                        <button class="btn btn-success" id="addToCard">Add to Card</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td id="itemName">TV</td>
+                    <td id="itemPrice">50000</td>
+                    <td id="itemCode">T001</td>
+                    <td>
+                        <button class="btn btn-success" id="addToCard">Add to Card</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td id="itemName">Desktop</td>
+                    <td id="itemPrice">75000</td>
+                    <td id="itemCode">D003</td>
+                    <td>
+                        <button class="btn btn-success" id="addToCard">Add to Card</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr>
+              <h1>Shopping Card</h1>
+              <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Product Price</th>
+                    <th scope="col">Product Code</th>
+                    <th scope="col">Delete From Card</th>
+                  </tr>
+                </thead>
+                <tbody id="CardItem_list">
+                  
+                </tbody>
+              </table>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+</html>
